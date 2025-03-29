@@ -17,6 +17,7 @@ struct LandmarksApp: App {
                 .environment(modelData)
         }
         
+        // watchOS notofocation
         #if os(watchOS)
         WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
         #endif
